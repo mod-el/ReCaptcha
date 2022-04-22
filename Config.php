@@ -16,4 +16,12 @@ $config = ' . var_export([
 				], true) . ";\n";
 		});
 	}
+
+	public function getConfigData(): ?array
+	{
+		return [
+			'public' => ['label' => 'Chiave pubblica', 'default' => null],
+			'private' => ['label' => 'Chiave privata', 'default' => null],
+		];
+	}
 }
